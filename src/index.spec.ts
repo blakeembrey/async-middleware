@@ -20,7 +20,7 @@ test('async middleware', t => {
       t.end()
     })
 
-    m(new Error('test'), {}, {}, function () {})
+    m(new Error('test'), {}, {}, function () {/* */})
   })
 
   t.test('error in error middleware', t => {

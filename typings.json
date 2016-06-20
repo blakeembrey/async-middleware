@@ -6,7 +6,7 @@
   "dependencies": {
     "any-promise": "registry:npm/any-promise#1.0.0+20160211003958"
   },
-  "ambientDependencies": {
+  "globalDependencies": {
     "node": "registry:dt/node#4.0.0+20160501135006"
   }
 }

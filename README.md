@@ -25,7 +25,7 @@ var app = express()
 
 app.use(wrap(function (req, res) {
   return Promise.reject(new Error('boom!'))
-})
+}))
 ```
 
 ## License

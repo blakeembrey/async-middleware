@@ -7,6 +7,6 @@
     "any-promise": "registry:npm/any-promise#1.0.0+20160211003958"
   },
   "globalDependencies": {
-    "node": "registry:dt/node#4.0.0+20160501135006"
+    "node": "registry:env/node#6.0.0+20160918225031"
   }
 }

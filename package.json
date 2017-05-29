@@ -40,7 +40,7 @@
   "devDependencies": {
     "blue-tape": "^1.0.0",
     "bluebird": "^3.3.5",
-    "chai": "^3.2.0",
+    "chai": "^4.0.0",
     "istanbul": "^0.4.4",
     "tap-spec": "^4.1.1",
     "tslint": "^5.0.0",

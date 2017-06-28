@@ -1,5 +1,4 @@
 import test = require('blue-tape')
-import Promise = require('any-promise')
 import { wrap, NextFunction } from './index'
 
 test('async middleware', t => {

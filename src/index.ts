@@ -1,5 +1,3 @@
-import Promise = require('any-promise')
-
 export interface NextFunction {
   (err: Error): void
 }

@@ -9,12 +9,12 @@
     "LICENSE"
   ],
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\"",
+    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json --type-check",
     "build": "rm -rf dist && tsc",
     "test-spec": "blue-tape 'dist/**/*.spec.js' | tap-spec",
     "test-cov": "istanbul cover -x '*.spec.js' node_modules/blue-tape/bin/blue-tape.js -- 'dist/**/*.spec.js' | tap-spec",
     "test": "npm run build && npm run lint && npm run test-cov",
-    "prepublish": "typings install && npm run build"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -38,17 +38,15 @@
   },
   "homepage": "https://github.com/blakeembrey/async-middleware",
   "devDependencies": {
+    "@types/blue-tape": "^0.1.31",
+    "@types/node": "^8.0.4",
     "blue-tape": "^1.0.0",
     "bluebird": "^3.3.5",
     "chai": "^4.0.0",
     "istanbul": "^0.4.4",
     "tap-spec": "^4.1.1",
-    "tslint": "^5.0.0",
-    "tslint-config-standard": "^6.0.0",
-    "typescript": "^2.2.1",
-    "typings": "^2.0.0"
-  },
-  "dependencies": {
-    "any-promise": "^1.2.0"
+    "tslint": "^5.4.3",
+    "tslint-config-standard": "^6.0.1",
+    "typescript": "^2.4.1"
   }
 }

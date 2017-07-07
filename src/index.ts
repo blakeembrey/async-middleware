@@ -1,5 +1,5 @@
 export interface NextFunction {
-  (err: Error): void
+  (err?: Error): void
 }
 
 export interface Handler <T, U> {

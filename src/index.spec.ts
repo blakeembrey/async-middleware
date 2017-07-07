@@ -8,7 +8,7 @@ test('async middleware', t => {
     })
 
     m({}, {}, function (err) {
-      t.equal(err.message, 'test')
+      t.equal(err!.message, 'test')
       t.end()
     })
   })
@@ -28,7 +28,7 @@ test('async middleware', t => {
     })
 
     m(new Error('test'), {}, {}, function (err) {
-      t.equal(err.message, 'test')
+      t.equal(err!.message, 'test')
       t.end()
     })
   })
